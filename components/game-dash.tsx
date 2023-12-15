@@ -42,7 +42,7 @@ const GameDash: React.FC<GameDashProps> = ({
     return ( 
         <div className="relative m-4 rounded-xl">
         {!started &&<Info className="absolute h-4 w-4 text-white top-1 right-1 cursor-pointer"/>}
-        <div className='text-white text-center w-56 p-6 text-sm sm:p-10
+        <div className='text-white text-center w-56 p-6 text-xs sm:text-sm sm:p-10
           border border-gray-500 rounded-xl sm:w-80 transition duration-500' ref={dashRef}> 
             {started ? tilesLeft+' more to go' : 'Press play icon to start'}
         </div>
