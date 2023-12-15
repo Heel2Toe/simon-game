@@ -1,0 +1,11 @@
+import Auth from "@/components/auth";
+
+const HomePage = () => {
+    return ( 
+        <div className="flex items-center justify-center h-full w-full bg-blue-200 p-4">
+           <Auth/>
+        </div>
+     );
+}
+ 
+export default HomePage;
