@@ -56,7 +56,7 @@ const Auth = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center sm:flex-row sm:justify-around items-center h-full w-full">
+    <div className="flex flex-col justify-around p-4 sm:flex-row items-center h-full w-full bg-slate-300">
       <div className="flex flex-col items-center space-y-4">
         <h1 className="text-4xl sm:text-6xl" onClick={switcher}>
           simon game.
@@ -65,7 +65,7 @@ const Auth = () => {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex min-h-[400px] w-[300px]  flex-col mt-10 sm:mt-0 items-center rounded-xl bg-gray-100 shadow-md"
+        className="flex h-[300px] sm:h-[400px] w-[300px]  flex-col mt-10 sm:mt-0 items-center rounded-xl bg-gray-100 shadow-md"
       >
         <div className="m-3 text-xl">Welcome</div>
 
