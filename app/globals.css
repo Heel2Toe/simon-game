@@ -39,14 +39,93 @@ body,
 
 .animate-gradient {
   background-size: 200% 100%;
-  animation: shimmer 1.5s infinite linear;
+  animation: skeleton 1.5s infinite linear;
 }
 
-@keyframes shimmer {
+@keyframes skeleton {
   0% {
     background-position: 200% 0;
   }
   100% {
     background-position: -200% 0;
+  }
+}
+
+.anim-1{
+  animation: anim-tl-br 4s infinite ;
+  animation-delay: 1s;
+}
+
+.anim-2{
+  animation: anim-tr-bl 4s infinite ;
+}
+
+.anim-3{
+  animation: anim-bl-tr 4s infinite ;
+}
+
+.anim-4{
+  animation: anim-br-tl 4s infinite ;
+  animation-delay: 1s;
+}
+
+@keyframes anim-br-tl {
+  0%{
+    transform: translateX(0) translateY(0);
+  }50%{
+  transform: translateX(-110%) translateY(-110%);
+ }
+ 90%,100%{
+  transform: translateX(0) translateY(0);
+
+ }
+}
+
+@keyframes anim-tl-br {
+  0%{
+    transform: translateX(0) translateY(0);
+  }50%{
+  transform: translateX(110%) translateY(110%);
+ }
+ 90%,100%{
+  transform: translateX(0) translateY(0);
+
+ }
+}
+
+@keyframes anim-tr-bl {
+  0%{
+    transform: translateX(0) translateY(0);
+  }50%{
+  transform: translateX(-110%) translateY(110%);
+ }
+ 90%,100%{
+  transform: translateX(0) translateY(0);
+
+ }
+}
+
+@keyframes anim-bl-tr {
+  0%{
+    transform: translateX(0) translateY(0);
+  }50%{
+  transform: translateX(110%) translateY(-110%);
+ }
+ 90%,100%{
+  transform: translateX(0) translateY(0);
+
+ }
+}
+
+.load-anim{
+  animation: load 1s infinite linear;
+}
+
+@keyframes load {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }

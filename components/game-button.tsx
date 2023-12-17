@@ -3,8 +3,8 @@ import { forwardRef, ForwardedRef } from "react";
 
 interface GameButtonProps {
   color: string;
-  name: string;
-  onClick: (e: React.MouseEvent<HTMLDivElement>) => void;
+  name?: string;
+  onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
   className?: string
   gameOver?: boolean
 }

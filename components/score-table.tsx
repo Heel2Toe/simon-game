@@ -47,7 +47,7 @@ const ScoreTable = ({ username }: { username: string }) => {
         {loading ? (
           <ScoreLoad/>
         ) : (
-          <FlipMove className="w-full flex flex-col items-center justify-center">
+          <FlipMove duration={600} className="w-full flex flex-col items-center justify-center">
             {data.map((user, index) => (
               <ScoreBar
                 key={user.id}
