@@ -56,20 +56,20 @@ const Auth = () => {
   };
 
   return (
-    <div className="flex flex-col justify-around p-4 sm:flex-row items-center h-full w-full bg-slate-300">
+    <div className="flex flex-col justify-around p-4 sm:flex-row items-center h-full w-full bg-slate-700">
       <div className="flex flex-col items-center space-y-4">
-        <h1 className="text-4xl sm:text-6xl" onClick={switcher}>
+        <h1 className="text-4xl text-gray-200 sm:text-6xl" onClick={switcher}>
           simon game.
         </h1>
-        <HomeBtns />
+        <HomeBtns/>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex h-[300px] sm:h-[400px] w-[300px]  flex-col mt-10 sm:mt-0 items-center rounded-xl bg-gray-100 shadow-md"
+        className="flex h-[300px] sm:h-[400px] w-[300px]  flex-col mt-10 sm:mt-0 items-center rounded-xl bg-slate-800 shadow-md"
       >
-        <div className="m-3 text-xl">Welcome</div>
+        <div className="m-3 text-xl text-gray-400">Welcome</div>
 
-        <FlipMove className="flex h-full w-full space-y-4  flex-col items-center">
+        <FlipMove className="flex pt-4 h-full w-full space-y-4  flex-col items-center">
           {!login && (
             <TextInput
               key={1}
@@ -94,14 +94,14 @@ const Auth = () => {
           <button
             type="submit"
             key={4}
-            className="flex items-center justify-center p-2 rounded-md border w-[90%] hover:bg-gray-200 mb-8"
+            className="flex items-center text-gray-500 justify-center p-2 rounded-md border border-gray-600 w-[90%] hover:bg-slate-700 mb-8"
           >
             {login ? "Log in" : "Sign up"}
             {loading && (
               <div className="load-anim h-4 w-4  ml-6 rounded-full border border-transparent border-t-black border-b-black" />
             )}
           </button>
-          <div className="text-sm text-gray-600 m-8">
+          <div className="text-sm text-gray-400 m-8">
             {login ? "new here ? " : "been here ? "}
             <span onClick={switcher} className="cursor-pointer">
               {login ? "sign up" : "log in"}
