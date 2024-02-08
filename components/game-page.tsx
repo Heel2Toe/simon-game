@@ -27,7 +27,7 @@ const GamePage = () => {
 
   return (
     <div className="flex items-center justify-center flex-col sm:flex-row  p-5 h-full w-full bg-slate-700">
-        <div className="flex">
+        <div className="flex mt-2">
           <UserInfo username={username} />
           <Game />
         </div>
