@@ -40,7 +40,7 @@ const ScoreTable = ({ username }: { username: string }) => {
 
 
   return (
-    <div className="mt-4 w-full sm:w-[236px] h-[340px] border border-gray-500 rounded-xl">
+    <div className="mt-4 mb-10 w-full sm:w-[236px] h-[340px] border border-gray-500 rounded-xl">
       <div className="flex flex-col items-center h-full w-full overflow-x-hidden overflow-y-scroll hide-scrollbar">
         <ScoreBar name="Name" score="Score" />
 
